@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/style.css">
     <!-- FontAwesome Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 
 <body>
@@ -20,26 +21,34 @@
     <!-- Project 1 : QUOTE GENERATOR -->
 
     <div class="container">
-        <div class="header">
+        <div class="header" data-aos="fade-down" data-aos-duration="1000">
             <h2>Javasript Quote Generator</h2>
         </div>
 
 
-        <div class="main-content">
+        <div class="main-content" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
 
-            <div class="text-area">
+            <div class="text-area" data-aos="fade-down" data-aos-duration="800" >
                 <span class="quote">
                     "I do the very best i know - the very best i can; and i mean to keep doing so until the end."
                 </span>
             </div>
+         
+            <div class="person" data-aos="fade-up" data-aos-duration="800">Fouad Ajayi</div>
 
-            <div class="person">Fouad Ajayi</div>
-
-            <div class="button-area">
+            <div class="button-area" data-aos="fade-down" data-aos-duration="800">
                 <button>New Quote</button>
             </div>
         </div>
     </div>
- 
+
+    <!-- ANIMATION ON SCROLL -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+    <!-- SCRIPT -->
+    <script src="/Script.js"></script>
 </body>
 </html>
