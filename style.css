@@ -65,5 +65,4 @@ body{
 
 .button-area button:active{
     background-color: lightblue;
-    border-bottom: 2px solid red;
 }
